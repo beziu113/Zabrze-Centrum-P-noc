@@ -8,28 +8,38 @@
         body {
             margin: 0;
             background-color: #f3efe9;
-            color: #2f261c;
             font-family: Arial, sans-serif;
+
+            /* wyśrodkowanie pionowej strony */
+            display: flex;
+            justify-content: center;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 30px;
-            text-align: center;
-        }
-
-        img {
-            max-width: 450px;
-            height: auto;
+        /* GŁÓWNA PIONOWA STRONA */
+        .page {
+            width: 750px;              /* wąska - pionowa */
+            min-height: 100vh;
+            background-color: #fbf9f6;
+            border: 4px solid black;   /* CZARNA RAMKA */
+            box-shadow: 0 0 30px rgba(0,0,0,0.25);
+            padding: 40px;
+            box-sizing: border-box;
         }
 
         header h1 {
+            text-align: center;
             color: #5a4632;
         }
 
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 350px;
+        }
+
         nav {
-            margin-top: 20px;
+            text-align: center;
+            margin: 30px 0;
         }
 
         nav a {
@@ -49,54 +59,64 @@
         }
 
         h2 {
+            text-align: center;
             color: #5a4632;
             margin-bottom: 25px;
         }
 
         p {
-            max-width: 900px;
-            margin: 0 auto;
             line-height: 1.7;
             font-size: 17px;
+            color: #2f261c;
+            text-align: justify;
         }
 
         /* RAMKA WPROWADZENIA */
         .intro-box {
-            background-color: #fbf9f6;
+            background-color: #ffffff;
             border: 2px solid #c9b8a4;
             border-radius: 14px;
-            padding: 30px 30px;
-            box-shadow: 0 10px 25px rgba(90, 70, 50, 0.15);
+            padding: 30px;
+            box-shadow: 0 8px 20px rgba(90, 70, 50, 0.15);
+        }
+
+        .line {
+            text-align: center;
+            margin: 20px 0;
+            color: #5a4632;
         }
     </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="page">
 
-    ║───────────────────────────────────────────────────────────────────────────────────────────────────║
-
-    <br><br>
+    <div class="line">
+        ║────────────────────────────────────────────║
+    </div>
 
     <!-- LOGO -->
     <img src="POL_Zabrze_flag.svg.png" alt="Flaga Zabrza">
 
     <header>
         <h1>╔════≫──────๑ Zabrze ~ Centrum Północ ๑──────≪════╗</h1>
-        ║───────────────────────────────────────────────────────────────────────────────────────────────────║
     </header>
 
-    <br>
+    <div class="line">
+        ║────────────────────────────────────────────║
+    </div>
 
     <!-- MENU -->
     <nav>
-        ║─────────────────────────────────────────────────────────────────────║<br>
         <a href="informacje.html">informacje</a> |
         <a href="ciekawostki.html">ciekawostki</a> |
         <a href="galeria.html">galeria</a>
-        <br>║─────────────────────────────────────────────────────────────────────║
     </nav>
+
+    <div class="line">
+        ║────────────────────────────────────────────║
+    </div>
 
     <!-- WPROWADZENIE -->
     <section>
@@ -108,15 +128,11 @@
                 dzielnic Zabrza. Położona w sercu miasta, łączy w sobie bogatą historię
                 przemysłową z dynamicznym, współczesnym charakterem. To właśnie tutaj
                 przeszłość spotyka się z nowoczesnością – zabytkowa architektura
-                sąsiaduje z nowymi inwestycjami, a codzienne życie mieszkańców tętni
-                w rytmie miejskiej aktywności.
+                sąsiaduje z nowymi inwestycjami, a codzienne życie mieszkańców
+                tętni w rytmie miejskiej aktywności.
             </p>
         </div>
     </section>
-
-    <br><br>
-
-    ║───────────────────────────────────────────────────────────────────────────────────────────────────║
 
 </div>
 
