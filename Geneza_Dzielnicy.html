@@ -43,11 +43,13 @@ nav {
     margin: 20px 0;
     font-size: 15px;
     letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 nav a {
     color: #5a4632;
     text-decoration: none;
-    margin: 0 10px;
     font-weight: 600;
 }
 nav a:hover {
@@ -74,6 +76,16 @@ h2 {
     line-height: 1.65;
     color: #2f261c;
     margin: 0;
+}
+.final-image {
+    display: block;
+    margin: 20px auto 40px auto;
+    width: 100%;
+    max-width: 680px; /* nie wychodzi poza granice .page */
+    height: auto;
+    border: 2px solid #c9b8a4;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(90,70,50,0.15);
 }
 .map-image {
     display: block;
@@ -110,7 +122,7 @@ h2 {
     <h1>⟪ Zabrze ~ Centrum Północ ⟫</h1>
     <div class="decor-line">————————————————————————————————————————</div>
     <nav>
-        <a href="index.html">| Wróć | </a> 
+        <a href="index.html">Wróć</a>
     </nav>
     <div class="decor-line">————————————————————————————————————————</div>
 
@@ -118,19 +130,19 @@ h2 {
     <div class="intro-box">
         <p>
         <strong>Centrum Północ</strong><br>
-
         📘 Dlaczego dzielnica nazywa się „Centrum Północ”?<br>
-
-Nazwa „Centrum Północ” została nadana ze względu na położenie dzielnicy w północnej części centralnego obszaru Zabrza.<br>
-<strong>➔</strong> „Centrum” oznacza, że jest to część miasta skupiająca administrację, handel i usługi.<br>
-<strong>➔</strong> „Północ” precyzuje, że chodzi o północną część centrum, w odróżnieniu od np. Centrum Południe.<br>
-
-Podział miasta na „Centrum Północ”, „Centrum Południe” i inne dzielnice jest formalnym podziałem administracyjnym, przyjętym przez władze miejskie w celu lepszego zarządzania obszarem i usługami publicznymi.<br>
-Dzielnica była tradycyjnie miejscem ważnych instytucji miejskich, takich jak szkoły, urzędy, a także handlowe ulice i place, co uzasadnia część „Centrum” w nazwie.<br>
-Nazwa funkcjonuje w urzędowych dokumentach, mapach, planach zagospodarowania przestrzennego oraz w komunikacji miejskiej. Mieszkańcy często identyfikują tę część miasta także z lokalnymi wydarzeniami i życiem kulturalnym, co sprawia, że nazwa jest rozpoznawalna.<br>
+        Nazwa „Centrum Północ” została nadana ze względu na położenie dzielnicy w północnej części centralnego obszaru Zabrza.<br>
+        <strong>➔</strong> „Centrum” oznacza, że jest to część miasta skupiająca administrację, handel i usługi.<br>
+        <strong>➔</strong> „Północ” precyzuje, że chodzi o północną część centrum, w odróżnieniu od np. Centrum Południe.<br>
+        Podział miasta na „Centrum Północ”, „Centrum Południe” i inne dzielnice jest formalnym podziałem administracyjnym, przyjętym przez władze miejskie w celu lepszego zarządzania obszarem i usługami publicznymi.<br>
+        Dzielnica była tradycyjnie miejscem ważnych instytucji miejskich, takich jak szkoły, urzędy, a także handlowe ulice i place, co uzasadnia część „Centrum” w nazwie.<br>
+        Nazwa funkcjonuje w urzędowych dokumentach, mapach, planach zagospodarowania przestrzennego oraz w komunikacji miejskiej. Mieszkańcy często identyfikują tę część miasta także z lokalnymi wydarzeniami i życiem kulturalnym, co sprawia, że nazwa jest rozpoznawalna.<br>
+        </p>
     </div>
-<div class="decor-line">————————————————————————————————————————</div>
-    <img src="ChatGPT Image 18 lut 2026, 19_20_41.png">
+    <div class="decor-line">————————————————————————————————————————</div>
+
+    <!-- Obraz na końcu -->
+    <img src="ChatGPT Image 18 lut 2026, 19_20_41.png" alt="Mapa Centrum Północ" class="final-image">
 </div>
 </body>
 </html>
