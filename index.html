@@ -1,138 +1,126 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Zabrze ~ Centrum Północ</title>
+<meta charset="UTF-8">
+<title>Zabrze ~ Centrum Północ</title>
 
-    <style>
-        body {
-            margin: 0;
-            background-color: #f3efe9;
-            font-family: Arial, sans-serif;
+<style>
+    body {
+        margin: 0;
+        background-color: #f3efe9;
+        display: flex;
+        justify-content: center;
+        font-family: "Segoe UI", Arial, sans-serif;
+    }
 
-            /* wyśrodkowanie pionowej strony */
-            display: flex;
-            justify-content: center;
-        }
+    .page {
+        width: 720px;
+        min-height: 100vh;
+        background-color: #fbf9f6;
+        border: 4px solid #000;
+        box-shadow: 0 0 30px rgba(0,0,0,0.25);
+        padding: 40px 45px;
+        box-sizing: border-box;
+        text-align: center;
+    }
 
-        /* GŁÓWNA PIONOWA STRONA */
-        .page {
-            width: 750px;              /* wąska - pionowa */
-            min-height: 100vh;
-            background-color: #fbf9f6;
-            border: 4px solid black;   /* CZARNA RAMKA */
-            box-shadow: 0 0 30px rgba(0,0,0,0.25);
-            padding: 40px;
-            box-sizing: border-box;
-        }
+    .decor-line {
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: #5a4632;
+        margin: 18px 0;
+    }
 
-        header h1 {
-            text-align: center;
-            color: #5a4632;
-        }
+    img {
+        display: block;
+        margin: 20px auto 25px auto;
+        max-width: 260px;
+    }
 
-        img {
-            display: block;
-            margin: 0 auto;
-            max-width: 350px;
-        }
+    h1 {
+        font-size: 28px;
+        font-weight: 600;
+        color: #5a4632;
+        margin: 10px 0;
+    }
 
-        nav {
-            text-align: center;
-            margin: 30px 0;
-        }
+    nav {
+        margin: 20px 0;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
 
-        nav a {
-            color: #5a4632;
-            text-decoration: none;
-            margin: 0 12px;
-            font-weight: bold;
-            font-size: 16px;
-        }
+    nav a {
+        color: #5a4632;
+        text-decoration: none;
+        margin: 0 10px;
+        font-weight: 600;
+    }
 
-        nav a:hover {
-            text-decoration: underline;
-        }
+    nav a:hover {
+        text-decoration: underline;
+    }
 
-        section {
-            margin-top: 50px;
-        }
+    h2 {
+        margin: 45px 0 20px 0;
+        font-size: 22px;
+        font-weight: 600;
+        color: #5a4632;
+    }
 
-        h2 {
-            text-align: center;
-            color: #5a4632;
-            margin-bottom: 25px;
-        }
+    .intro-box {
+        background-color: #ffffff;
+        border: 2px solid #c9b8a4;
+        border-radius: 14px;
+        padding: 28px 30px;
+        max-width: 560px;
+        margin: 0 auto;
+        box-shadow: 0 6px 18px rgba(90,70,50,0.15);
+        text-align: left;
+    }
 
-        p {
-            line-height: 1.7;
-            font-size: 17px;
-            color: #2f261c;
-            text-align: justify;
-        }
-
-        /* RAMKA WPROWADZENIA */
-        .intro-box {
-            background-color: #ffffff;
-            border: 2px solid #c9b8a4;
-            border-radius: 14px;
-            padding: 30px;
-            box-shadow: 0 8px 20px rgba(90, 70, 50, 0.15);
-        }
-
-        .line {
-            text-align: center;
-            margin: 20px 0;
-            color: #5a4632;
-        }
-    </style>
+    .intro-box p {
+        font-size: 16px;
+        line-height: 1.65;
+        color: #2f261c;
+        margin: 0;
+    }
+</style>
 </head>
 
 <body>
 
 <div class="page">
 
-    <div class="line">
-        ║────────────────────────────────────────────║
-    </div>
+    <div class="decor-line">||──────────────────────────────────────────||</div>
 
-    <!-- LOGO -->
     <img src="POL_Zabrze_flag.svg.png" alt="Flaga Zabrza">
 
-    <header>
-        <h1>╔════≫──────๑ Zabrze ~ Centrum Północ ๑──────≪════╗</h1>
-    </header>
+    <h1>⟪ Zabrze ~ Centrum Północ ⟫</h1>
 
-    <div class="line">
-        ║────────────────────────────────────────────║
-    </div>
+    <div class="decor-line">||──────────────────────────────────────────||</div>
 
-    <!-- MENU -->
     <nav>
         <a href="informacje.html">informacje</a> |
         <a href="ciekawostki.html">ciekawostki</a> |
         <a href="galeria.html">galeria</a>
     </nav>
 
-    <div class="line">
-        ║────────────────────────────────────────────║
+    <div class="decor-line">||──────────────────────────────────────────||</div>
+
+    <h2>Wprowadzenie</h2>
+
+    <div class="intro-box">
+        <p>
+            <strong>Centrum Północ</strong> to jedna z kluczowych i najbardziej
+            rozpoznawalnych dzielnic Zabrza. Położona w sercu miasta,
+            łączy w sobie bogatą historię przemysłową z dynamicznym,
+            współczesnym charakterem. To właśnie tutaj przeszłość
+            spotyka się z nowoczesnością – zabytkowa architektura
+            sąsiaduje z nowymi inwestycjami, a codzienne życie mieszkańców
+            tętni w rytmie miejskiej aktywności.
+        </p>
     </div>
-
-    <!-- WPROWADZENIE -->
-    <section>
-        <h2>╭━━━ Wprowadzenie ━━━╮</h2>
-
-        <div class="intro-box">
-            <p>
-                <b>Centrum Północ</b> to jedna z kluczowych i najbardziej rozpoznawalnych
-                dzielnic Zabrza. Położona w sercu miasta, łączy w sobie bogatą historię
-                przemysłową z dynamicznym, współczesnym charakterem. To właśnie tutaj
-                przeszłość spotyka się z nowoczesnością – zabytkowa architektura
-                sąsiaduje z nowymi inwestycjami, a codzienne życie mieszkańców
-                tętni w rytmie miejskiej aktywności.
-            </p>
-        </div>
-    </section>
 
 </div>
 
