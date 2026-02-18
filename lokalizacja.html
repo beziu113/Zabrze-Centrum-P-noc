@@ -23,7 +23,7 @@ body {
 }
 .decor-line {
     font-size: 16px;
-    letter-spacing: 0; /* zrównanie do strony */
+    letter-spacing: 0; 
     color: #5a4632;
     margin: 18px 0;
     line-height: 1;
@@ -64,8 +64,8 @@ h2 {
     border: 2px solid #c9b8a4;
     border-radius: 14px;
     padding: 28px 30px;
-    max-width: 560px;
-    margin: 0 auto;
+    max-width: 660px;
+    margin: 0 auto 40px auto;
     box-shadow: 0 6px 18px rgba(90,70,50,0.15);
     text-align: left;
 }
@@ -75,13 +75,21 @@ h2 {
     color: #2f261c;
     margin: 0;
 }
-
-/* Wideo */
+.map-image {
+    display: block;
+    margin: 20px auto 40px auto;
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    border: 2px solid #c9b8a4;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(90,70,50,0.15);
+}
 .video-container {
     position: relative;
     width: 100%;
-    max-width: 720px; /* dopasowane do .page */
-    padding-bottom: 56.25%; /* 16:9 ratio */
+    max-width: 720px; 
+    padding-bottom: 56.25%; 
     margin: 0 auto 40px auto;
     height: 0;
 }
@@ -105,30 +113,25 @@ h2 {
         <a href="index.html">Wróć</a> 
     </nav>
     <div class="decor-line">————————————————————————————————————————</div>
+
     <h2>Lokalizacja:</h2>
     <div class="intro-box">
         <p>
         <strong>Centrum Północ</strong> to jedna z centralnych dzielnic miasta Zabrze, położona w północnej części centrum miasta. Graniczy z następującymi dzielnicami:
 
- <strong>➔Maciejów</strong> – na zachodzie
+        <strong>➔ Maciejów</strong> – na zachodzie<br>
+        <strong>➔ Centrum Południe</strong> – na południu<br>
+        <strong>➔ Śródmieście</strong> – na południowym wschodzie<br>
+        <strong>➔ Skłodowskiej-Curie</strong> – na wschodzie<br><br>
 
- <strong>➔Centrum Południe</strong> – na południu
+        Dzielnica zajmuje obszar dobrze skomunikowany z resztą miasta. Przebiegają przez nią główne ulice, a także linie komunikacji miejskiej, co ułatwia mieszkańcom i turystom dostęp do innych części Zabrza. Centrum Północ łączy funkcje mieszkalne, handlowe i administracyjne, dzięki czemu jest jednym z ważniejszych punktów w strukturze miasta.<br><br>
 
- <strong>➔Śródmieście</strong> – na południowym wschodzie
-
- <strong>➔Skłodowskiej-Curie</strong> – na wschodzie
-
-Dzielnica zajmuje obszar dobrze skomunikowany z resztą miasta. Przebiegają przez nią główne ulice, a także linie komunikacji miejskiej, co ułatwia mieszkańcom i turystom dostęp do innych części Zabrza. Centrum Północ łączy funkcje mieszkalne, handlowe i administracyjne, dzięki czemu jest jednym z ważniejszych punktów w strukturze miasta.
-Na mapie poniżej widzimy wyraźnie zaznaczone granice Centrum Północ i sąsiadujące dzielnice, co pozwala lepiej zrozumieć jej położenie w mieście.
+        Na mapie poniżej widzimy wyraźnie zaznaczone granice Centrum Północ i sąsiadujące dzielnice, co pozwala lepiej zrozumieć jej położenie w mieście.
         </p>
     </div>
 
-    <!-- OBRAZ -->
-     <h2>Pokaz Mapy</h2>
-<img src="ChatGPT Image 18 lut 2026, 18_43_01.png" alt="Flaga Zabrza">
-        </iframe>
-    </div>
+    <h2>Pokaz Mapy</h2>
+    <img src="ChatGPT Image 18 lut 2026, 18_43_01.png" alt="Mapa Centrum Północ" class="map-image">
 </div>
 </body>
 </html>
-
