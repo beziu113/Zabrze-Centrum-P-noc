@@ -10,7 +10,10 @@ body {
     display: flex;
     justify-content: center;
     font-family: "Segoe UI", Arial, sans-serif;
+    perspective: 1500px; /* potrzebne dla efektu flip */
+    overflow-x: hidden;
 }
+
 .page {
     width: 720px;
     min-height: 100vh;
@@ -20,10 +23,19 @@ body {
     padding: 40px 45px;
     box-sizing: border-box;
     text-align: center;
+    transform: rotateY(90deg);
+    transform-origin: left;
+    transition: transform 0.8s ease-in-out;
 }
+
+.page.show {
+    transform: rotateY(0deg);
+}
+
+/* dekoracje i wygląd */
 .decor-line {
     font-size: 16px;
-    letter-spacing: 0; /* zrównanie do strony */
+    letter-spacing: 0;
     color: #5a4632;
     margin: 18px 0;
     line-height: 1;
@@ -43,15 +55,21 @@ nav {
     margin: 20px 0;
     font-size: 15px;
     letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 nav a {
     color: #5a4632;
     text-decoration: none;
-    margin: 0 10px;
     font-weight: 600;
 }
 nav a:hover {
     text-decoration: underline;
+}
+nav .separator {
+    color: #5a4632;
 }
 h2 {
     margin: 45px 0 20px 0;
@@ -75,13 +93,11 @@ h2 {
     color: #2f261c;
     margin: 0;
 }
-
-/* Wideo */
 .video-container {
     position: relative;
     width: 100%;
-    max-width: 720px; /* dopasowane do .page */
-    padding-bottom: 56.25%; /* 16:9 ratio */
+    max-width: 720px;
+    padding-bottom: 56.25%;
     margin: 0 auto 40px auto;
     height: 0;
 }
@@ -101,37 +117,13 @@ h2 {
     <img src="POL_Zabrze_flag.svg.png" alt="Flaga Zabrza">
     <h1>⟪ Zabrze ~ Centrum Północ ⟫</h1>
     <div class="decor-line">————————————————————————————————————————</div>
-   <nav>
-    <a href="lokalizacja.html">Lokalizacja</a>
-    <span class="separator">|</span>
-    <a href="Geneza_Dzielnicy.html">Geneza Dzielnicy</a>
-    <span class="separator">|</span>
-    <a href="historia.html">Historia</a>
-</nav>
-
-<style>
-nav {
-    margin: 20px 0;
-    font-size: 15px;
-    letter-spacing: 1px;
-    display: flex;
-    justify-content: center; /* Wyśrodkowanie linków */
-    align-items: center;
-    gap: 10px; /* Odstęp między elementami */
-}
-nav a {
-    color: #5a4632;
-    text-decoration: none;
-    font-weight: 600;
-}
-nav a:hover {
-    text-decoration: underline;
-}
-nav .separator {
-    color: #5a4632;
-}
-</style>
-
+    <nav>
+        <a href="lokalizacja.html">Lokalizacja</a>
+        <span class="separator">|</span>
+        <a href="Geneza_Dzielnicy.html">Geneza Dzielnicy</a>
+        <span class="separator">|</span>
+        <a href="historia.html">Historia</a>
+    </nav>
     <div class="decor-line">————————————————————————————————————————</div>
     <h2>Wprowadzenie</h2>
     <div class="intro-box">
@@ -139,8 +131,6 @@ nav .separator {
         <strong>Centrum Północ</strong> to jedna z kluczowych i najbardziej rozpoznawalnych dzielnic Zabrza. Położona w sercu miasta, łączy w sobie bogatą historię przemysłową z dynamicznym, współczesnym charakterem. To właśnie tutaj przeszłość spotyka się z nowoczesnością – zabytkowa architektura sąsiaduje z nowymi inwestycjami, a codzienne życie mieszkańców tętni w rytmie miejskiej aktywności.
         </p>
     </div>
-
-    <!-- WIDEO -->
     <h2>A może dzielnica z punktu widzenia drona?</h2>
     <div class="video-container">
         <iframe src="https://www.youtube.com/embed/Fa0EulnQlV4" 
@@ -150,5 +140,23 @@ nav .separator {
         </iframe>
     </div>
 </div>
+
+<script>
+// efekt „przewracania strony” przy wejściu
+window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.page').classList.add('show');
+});
+
+// efekt flip przy klikaniu linku
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function(e){
+        e.preventDefault();
+        document.querySelector('.page').classList.remove('show');
+        setTimeout(() => {
+            window.location.href = this.href;
+        }, 800); // czas dopasowany do animacji
+    });
+});
+</script>
 </body>
 </html>
