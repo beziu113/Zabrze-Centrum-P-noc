@@ -2,20 +2,20 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Zabrze~Centrum Północ</title>
+    <title>Zabrze ~ Centrum Północ</title>
 
     <style>
         body {
             margin: 0;
-            background-color: black;
-            color: white;
+            background-color: #f3efe9;
+            color: #2f261c;
             font-family: Arial, sans-serif;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
         }
 
@@ -24,26 +24,49 @@
             height: auto;
         }
 
+        header h1 {
+            color: #5a4632;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
         nav a {
-            color: white;
+            color: #5a4632;
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 12px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
         }
 
         section {
-            margin-top: 40px;
+            margin-top: 50px;
+        }
+
+        h2 {
+            color: #5a4632;
+            margin-bottom: 25px;
         }
 
         p {
             max-width: 900px;
-            margin: 20px auto;
-            line-height: 1.6;
+            margin: 0 auto;
+            line-height: 1.7;
+            font-size: 17px;
         }
 
-        iframe {
-            display: block;
-            margin: 30px auto;
-            max-width: 100%;
+        /* RAMKA WPROWADZENIA */
+        .intro-box {
+            background-color: #fbf9f6;
+            border: 2px solid #c9b8a4;
+            border-radius: 14px;
+            padding: 30px 30px;
+            box-shadow: 0 10px 25px rgba(90, 70, 50, 0.15);
         }
     </style>
 </head>
@@ -60,7 +83,7 @@
     <img src="POL_Zabrze_flag.svg.png" alt="Flaga Zabrza">
 
     <header>
-        <h1>╔════≫──────๑ Zabrze~Centrum Północ ๑──────≪════╗</h1>
+        <h1>╔════≫──────๑ Zabrze ~ Centrum Północ ๑──────≪════╗</h1>
         ║───────────────────────────────────────────────────────────────────────────────────────────────────║
     </header>
 
@@ -77,33 +100,21 @@
 
     <!-- WPROWADZENIE -->
     <section>
-        <h2> ╭━━━ Wprowadzenie ━━━╮</h2>
+        <h2>╭━━━ Wprowadzenie ━━━╮</h2>
 
-        <p>
-            <b>Centrum Północ
-            to jedna z kluczowych i najbardziej rozpoznawalnych dzielnic Zabrze.
-            Położona w sercu miasta, łączy w sobie bogatą historię przemysłową z dynamicznym, współczesnym charakterem.
-            To właśnie tutaj przeszłość spotyka się z nowoczesnością – zabytkowa architektura sąsiaduje z nowymi inwestycjami, a codzienne życie mieszkańców tętni w rytmie miejskiej aktywności.
-        </p>
-
-        <p>
-            Funkcjonariusze LSPD reagują na przestępstwa, prowadzą dochodzenia,
-            patrolują ulice oraz współpracują z innymi służbami ratunkowymi.
-        </p>
+        <div class="intro-box">
+            <p>
+                <b>Centrum Północ</b> to jedna z kluczowych i najbardziej rozpoznawalnych
+                dzielnic Zabrza. Położona w sercu miasta, łączy w sobie bogatą historię
+                przemysłową z dynamicznym, współczesnym charakterem. To właśnie tutaj
+                przeszłość spotyka się z nowoczesnością – zabytkowa architektura
+                sąsiaduje z nowymi inwestycjami, a codzienne życie mieszkańców tętni
+                w rytmie miejskiej aktywności.
+            </p>
+        </div>
     </section>
 
-    <!-- WIDEO -->
-    <section>
-        <h2>Co sądzi internet?</h2>
-
-        <iframe width="960" height="540"
-            src="https://www.youtube.com/embed/BxoglXvo7-U"
-            title="Megalodon był większy niż sądzono"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
-    </section>
+    <br><br>
 
     ║───────────────────────────────────────────────────────────────────────────────────────────────────║
 
@@ -111,5 +122,3 @@
 
 </body>
 </html>
-
-
